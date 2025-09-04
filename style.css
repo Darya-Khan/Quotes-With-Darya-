@@ -1,0 +1,307 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+}
+
+          /* _________________Website Navbar_____________________________________________ */
+
+.nav-bar{
+    display: flex;
+    background: linear-gradient(90deg, #1f2937, #4b5563);
+    color:white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.nav-menu{
+    list-style: none;
+    gap: 30px;
+    display: flex;
+}
+
+.nav-menu li{
+    position: relative;
+}
+
+.nav-bar li > a{
+    color: white;
+    padding:10px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+ .nav-bar li > a:hover{
+    background-color: #74ebd5;
+    border-radius: 5px;
+}
+
+.nav-icon {
+    display: none;
+
+}
+
+@media (max-width:768px) {
+    .nav-icon{
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-menu{
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        max-height: 0;
+        flex-direction: column;
+        background-color: #ACB6E5;
+        color: white;
+        align-items: center;
+        overflow: hidden;
+        transition: 0.3s ease;
+    }
+
+    #nav-btn:checked~ .nav-menu{
+        max-height: 400px;
+        padding: 10px 0;
+    }
+
+    .nav-menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-bar li a{
+        width: 100%;
+        padding: 8px 0;
+        display: block;
+    }
+
+    .nav-icon b{
+      font-size: 22px;
+      cursor: pointer;
+    }
+}
+      /* ____________________Main Body_________________________________________________ */
+
+      .heading{
+        text-align: center;
+        padding: 30px;   
+        justify-content: center;
+        align-items: center;   
+      }
+
+      .heading-h1{
+        padding-bottom: 10px;
+        width: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 2px solid #1f2937;
+        animation: typing 4s steps(20,end) forwards, blink 0.5s step-end infinite;
+        text-align: center;
+        display: inline-block;
+        color: #1f2937;
+        padding-top: 10px;
+      }
+
+      .heading-p{
+        display: block;
+        animation: colorChange 4s infinite;
+        font-size: 1.3rem; 
+      }
+
+      .container-one{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 25px;
+      }
+
+      .quote-box{
+        background:linear-gradient(135deg, #4b6cb7, #182848);
+        color: white;
+        padding: 20px 30px;
+        border-radius: 12px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        max-width: 350px;
+        margin: 20px auto;  
+        transition: transform 0.5s;     
+  }
+      .quote-box:hover{
+        transform: scale(0.96);
+      }
+
+.quote-box .quote{
+        font-style: italic;
+        font-size: 1.2rem;
+        opacity: 0;
+        animation: fadeIn 2s forwards;  
+        }
+
+      .quote b{
+        font-style: normal;
+        
+      }
+
+      .quote-box .author{
+        font-weight: bold;
+        padding-top: 15px;
+        float: right;
+        
+      }
+
+      /* ____________________ABout CSS________________________________________ */
+
+      .container-two{
+        margin-top: 30px;
+        border-top: 1px solid #fff;
+      }
+
+      .about-one{
+          background:linear-gradient(135deg, #4b6cb7, #182848);
+          color: white;
+          padding: 20px 30px;
+          border-radius: 12px;
+          box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+          margin: 20px auto;
+          text-align: center;
+      }
+
+      .about-h1bio{
+        font-size: 25px;
+        padding-bottom: 10px;
+        font-weight: bold;
+      }
+
+      .about-h1bio{
+        width: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 2px solid whitesmoke;
+        animation: typing-h1bio 4s steps(20,end) forwards, blink 0.5s step-end infinite;
+        text-align: center;
+        display: inline-block;
+        color: white;
+      }
+
+      .about-h1contact{
+        font-size: 25px;
+        padding-bottom: 10px;
+        font-weight: bold;
+      }
+
+      .about-h1contact{
+        width: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 2px solid whitesmoke;
+        animation: typing-h1contact 4s steps(20,end) forwards, blink 0.5s step-end infinite;
+        text-align: center;
+        display: inline-block;
+        color: white;
+      }
+
+      .about-p{
+        font-size:20px ;
+      }
+
+      .about-one ul{
+        list-style: none;
+        
+      }
+
+      .about-one ul li{
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding: 3px;
+      }
+
+      .about-one ul li a{
+        padding-left: 10px;
+        color:  white;
+        text-decoration: none;
+      }
+
+      /* ____________________Footer Part________________________________________ */
+
+      .footer{
+        background: linear-gradient(90deg, #1f2937, #4b5563); 
+        height: 50px;
+        text-align: center;
+        font-size: 18px;
+        color: white;
+        align-content: center;
+      }
+
+      /* ____________________Animation Transaition________________________________________ */
+      
+      @keyframes typing {
+        to { width: 18ch; }
+      }
+
+      @keyframes typing-h1bio {
+        to { width: 10ch; }
+      }
+
+      @keyframes typing-h1contact {
+        to { width: 22ch; }
+      }
+
+
+      @keyframes typing-h2  {
+        to { width: 19ch; }
+      }
+
+      @keyframes blink {
+        50% { border-color: transparent; }
+      }
+
+      
+    @keyframes fadeIn {
+        to { opacity: 1; }
+       }
+
+       @keyframes colorChange {
+        0% { color: #d1d0d0; }
+        50% { color: #631010; }
+        100% { color: #fff; }
+      }
+
+      /* ____________________Media Query__________________________________________________ */
+
+      @media screen and (max-width:1000px){
+        .nav-bar h2{
+            font-size: 20px;
+        }
+
+
+
+        .container-one{
+            display: flex;
+            flex-direction: column;
+        }
+
+       .heading-h1{
+        flex-wrap: wrap;
+        font-size: 25px;
+       }
+
+       .about{
+        flex-direction: column;
+       }
+
+       .about-one{
+        flex-wrap: wrap;
+        flex-direction: column;
+       }
+
+      }

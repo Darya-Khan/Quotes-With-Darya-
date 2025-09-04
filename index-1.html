@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quotes Categories | Quotes with Darya</title>
+  
+  <style>
+      
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(to right, #fceabb, #f8b500);
+  background-image: url(success.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  color: #333;
+  padding: 20px;
+}
+
+
+
+ /* ____________Catgories Design_______________________________________________ */
+
+
+.overveiw{
+      display: inline-block;
+      border-bottom: 2px solid white; 
+      justify-content: center; 
+    }
+
+    ul{
+      padding-bottom: 10px;
+      padding-top: 5px;
+      list-style: none;
+    }
+
+    .overveiw-name{
+      font-size: 22px;
+      display: block;
+      cursor: pointer;
+      display: flex;
+      padding-top: 5px;
+    }
+
+    .overveiw-name p{
+      font-size: 18px;
+      align-content: center;
+      padding-left: 10px;
+      color: white;
+    }
+
+    .overveiw .quotes-name{
+      color: white;
+    }
+
+    .li-hover{
+      padding: 3px;
+    }
+
+    .back{
+      font-weight: bold;
+    }
+
+    .end{
+      border-bottom: 2px solid #333;
+    }
+
+
+    ul .li-hover a{
+      text-decoration: none;
+      color: black;  
+    }
+
+    .li-hover:hover{
+      background-color: black;
+    }
+
+    .li-hover a:hover{
+      color: white;
+    }
+
+
+
+
+    /* ____________More Part_______________________________________________ */
+
+    .website{
+      justify-self: center;
+      
+    }
+
+    .main-box{
+      margin-top: 20px;
+      padding: 10px 10px;
+      background: #333;
+      border-radius: 5px; 
+      width: 350px;
+      box-shadow: 0px 10px 20px rgba(105, 105, 105, 0.3);
+      border-left: 3px solid #333;
+      border-right: 3px solid #333;
+      transition: transform 0.5s;  
+    }
+
+    .main-box:hover{
+      transform: scale(0.96);
+      }
+
+
+    .main-data{
+      padding: 15px;
+    }
+
+    .main-data ol li{
+      padding-top: 15px;
+      font-size: 19px;
+    }
+
+    .main-name{
+      font-weight: bold;
+      color: white;
+    }
+
+     b{
+      border-radius: 3px;
+      border-bottom: 2px solid #f8b500;
+    }
+
+    /* _________________Bacground For ALL__________________________________________________ */
+
+    #motivation{
+      background-image: url(Gradient\ One.jpeg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    #success{
+      background-image: url(Motivation.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    #love{
+      background-image: url(Gradient\ three.jpeg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      color: white;
+    }
+
+    #life{
+      background-image: url(Gradient\ Five.jpeg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    #wisdom{
+      background-image: url(Gradient\ Siz.jpeg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    #happiness{
+      background-image: url(Gradient\ One.jpeg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    #friendship{
+      background-image: url(Gradient\ seven.jpeg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    #leadership{
+      background-image: url(Gradint\ FOur.jpeg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      color: white;
+    }
+
+    #learning{
+      background-image: url(Gradient\ Five.jpeg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    
+    #time{
+      background-image: url(Gradient\ two.jpeg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    #trust{
+      background-image: url(Gradint\ FOur.jpeg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      color: white;
+    }
+
+
+
+
+
+
+    /* ___________Media Query For Mobile_____________________________________________ */
+
+    @media screen and (max-width:1000px) {
+      body{
+        background-repeat: repeat;
+        background-image: url(background.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+      }
+    }
+
+
+      
+  </style>
+</head>
+
+
+
+
+<article>
+<h2 class="quotes-name">Quotes with Darya 🌿</h2>
+<details>
+<summary class="overveiw-name">☰ <p>Explore quotes by your favorite themes</p></summary>
+
+<figure>
+  <ul>
+    <li class="li-hover back" ><a href="index.html">Back To Home</a></li>
+    <li></li>
+    <li class="li-hover" ><a href="#jump-1">Success</a></li>
+    <li class="li-hover" ><a href="#jump-2">Motivation</a></li>
+    <li class="li-hover" ><a href="#jump3">Love</a></li>
+    <li class="li-hover" ><a href="#jump-4">Life</a></li>
+    <li class="li-hover" ><a href="#jump-5">wisdom</a></li>
+    <li class="li-hover" ><a href="#jump-6">Happiness</a></li>
+    <li class="li-hover" ><a href="#jump-7">Friendship</a></li>
+    <li class="li-hover" ><a href="#jump-8">Leadership</a></li>
+    <li class="li-hover" ><a href="#jump-9">Learning</a></li>
+    <li class="li-hover" ><a href="#jump-10">Time</a></li>
+    <li class="li-hover end" ><a href="#jump-11">Trust</a></li>
+  </ul>
+  
+</figure>
+</details>
+</article>
+
+<!-- ______________Main Part OF Data____________________________________________ -->
+
+<section class="website">
+
+<article class="main-box" id="success">
+<details>
+<summary class="main-name" id="jump-1">SUCCESS</summary>
+<figure class="main-data"> 
+
+<ol>
+  <li>Success is not final, failure is not fatal: It is the courage to continue that counts.</li>
+    <b>Winston Churchill</b>
+    
+  <li>Don't be afraid to give up the good to go for the great.</li>
+  <b>– John D. Rockefeller </b>
+
+  <li>The only place where success comes before work is in the dictionary</li>
+  <b>– Vidal Sassoon </b>
+
+  <li>I never dreamed about success. I worked for it.</li>
+  <b>– Estée Lauder </b>
+
+  <li>Success is walking from failure to failure with no loss of enthusiasm.</li>
+  <b>– Winston Churchill </b>
+
+  <li>Opportunities don't happen. You create them.</li>
+  <b>– Chris Grosser</b>
+
+  <li>Try not to become a man of success. Rather become a man of value.</li>
+  <b> – Albert Einstein </b>
+
+  <li>The road to success is always under construction.</li>
+  <b>– Lily Tomlin </b>
+
+  <li>There are no secrets to success. It is the result of preparation,
+      hard work, and learning from failure.</li>
+  <b> – Colin Powell </b>
+
+  <li>Success usually comes to those who are too busy to be looking for it.</li>
+  <b> – Henry David Thoreau </b>
+
+
+
+
+</ol>
+</figure>
+</details>
+</article>
+
+<article class="main-box" id="motivation">
+<details>
+<summary class="main-name" id="jump-2" >MOTIVATION</summary>
+<figure class="main-data"> 
+
+<ol>
+
+  <li>The future depends on what you do today.</li>
+  <b>Mahatma Gandhi</b>
+
+  <li>Push yourself, because no one else is going to do it for you.</li>
+  <b>– Unknown</b>
+
+  <li>The harder you work for something, the greater you’ll feel when you achieve it.</li>
+  <b>– Unknown </b>
+
+  <li>Do something today that your future self will thank you for.</li>
+  <b>– Sean Patrick Flanery </b>
+
+  <li>Don’t watch the clock; do what it does. Keep going.</li>
+  <b>– Sam Levenson </b>
+
+  <li>Great things never come from comfort zones.</li>
+  <b>– Roy T. Bennett </b>
+
+  <li>Dream it. Wish it. Do it.</li>
+  <b>– Unknown </b>
+
+  <li>Success doesn’t just find you. You have to go out and get it.</li>
+  <b> – Unknown </b>
+
+  <li>It always seems impossible until it’s done.</li>
+  <b>– Nelson Mandela </b>
+
+  <li>Start where you are. Use what you have. Do what you can.</li>
+  <b>– Arthur Ashe </b>
+
+</ol>
+</figure>
+</details>
+</article>
+
+<article class="main-box" id="love">
+<details>
+<summary class="main-name" id="jump-3" >LOVE</summary>
+<figure class="main-data"> 
+
+<ol>
+
+  <li>Where there is love there is life.</li>
+  <b>Mahatma Gandhi </b>
+
+  <li>Love all, trust a few, do wrong to none.</li>
+  <b>–William Shakespeare </b>
+
+  <li>To love and be loved is to feel the sun from both sides.</li>
+  <b>– David Viscott </b>
+
+  <li>Love is composed of a single soul inhabiting two bodies.</li>
+  <b> – Aristotle </b>
+
+  <li>We are most alive when we’re in love.</li>
+  <b>– John Updike</b>
+
+  <li>Love recognizes no barriers.</li>
+  <b> – Maya Angelou </b>
+
+  <li>Being deeply loved by someone gives you strength, while loving someone deeply gives you courage.</li>
+  <b> – Lao Tzu </b>
+
+  <li>In the end we discover that to love and let go can be the same thing.</li>
+  <b> – Jack Kornfield </b>
+
+  <li>The best thing to hold onto in life is each other.</li>
+  <b>– Audrey Hepburn</b>
+
+  <li>Love cures people—both the ones who give it and the ones who receive it.</li>
+  <b>– Karl Menninger </b>
+
+</ol>
+</figure>
+</details>
+</article>
+
+<article class="main-box " id="life">
+<details>
+<summary class="main-name" id="jump-4" >LIFE</summary>
+<figure class="main-data"> 
+
+<ol>
+
+  <li>In the middle of every difficulty lies opportunity.</li>
+  <b>Albert Einstein</b>
+
+  <li>Life is what happens when you're busy making other plans.</li>
+  <b>John Lennon </b>
+
+  <li>Difficulties in life are intended to make us better, not bitter.</li>
+  <b>Dan Reeves </b>
+
+  <li>Live as if you were to die tomorrow. Learn as if you were to live forever.</li>
+  <b>Mahatma Gandhi </b>
+
+  <li>Life is really simple, but we insist on making it complicated.</li>
+  <b>Confucius </b>
+
+  <li>The purpose of our lives is to be happy.</li>
+  <b>Dalai Lama </b>
+
+  <li>Get busy living or get busy dying.</li>
+  <b> Stephen King </b>
+
+  <li>You only live once, but if you do it right, once is enough.</li>
+  <b>Mae West </b>
+
+  <li>Life itself is the most wonderful fairy tale.</li>
+  <b>Hans Christian Andersen </b>
+
+  <li>Enjoy the little things in life, for one day you may look back and realize they were the big things.</li>
+  <b>Robert Breault </b>
+
+  <li></li>
+  <b></b>
+
+</ol>
+</figure>
+</details>
+</article>
+
+<article class="main-box" id="wisdom">
+        <details>
+        <summary class="main-name" id="jump-5" >WISDOM / REFLECTION</summary>
+        <figure class="main-data"> 
+
+        <ol>
+
+          <li>Knowing yourself is the beginning of all wisdom.</li>
+          <b>Aristotle </b>
+
+          <li>The only true wisdom is in knowing you know nothing.</li>
+          <b>Socrates </b>
+
+          <li>Turn your wounds into wisdom</li>
+          <b>Oprah Winfrey </b>
+
+          <li>Wise men speak because they have something to say; fools because they have to say something.</li>
+          <b>Plato</b>
+
+          <li>Knowledge speaks, but wisdom listens.</li>
+          <b>Jimi Hendrix </b>
+
+          <li>It is not length of life, but depth of life.</li>
+          <b>Ralph Waldo Emerson </b>
+
+          <li>Life can only be understood backwards; but it must be lived forwards.</li>
+          <b>Søren Kierkegaard </b>
+
+          <li>A wise man can learn more from a foolish question than a fool can learn from a wise answer.</li>
+          <b>Bruce Lee</b>
+
+          <li>The unexamined life is not worth living.</li>
+          <b>Socrates </b>
+          
+          <li>We do not learn from experience… we learn from reflecting on experience.</li>
+          <b>John Dewey </b>
+
+  </ol>
+</figure>
+</details>
+</article>
+
+<article class="main-box" id="happiness">
+<details>
+<summary class="main-name" id="jump-6">🌞 HAPPINESS</summary>
+  <figure class="main-data"> 
+
+    <ol>
+
+      <li>Happiness is when what you think, what you say, and what you do are in harmony.</li>
+      <b>Mahatma Gandhi</b>
+
+      <li>There is only one happiness in this life, to love and be loved.</li>
+      <b>George Sand</b>
+
+      <li>Be happy for this moment. This moment is your life</li>
+      <b>Omar Khayyam</b>
+
+      <li>Be kind whenever possible. It is always possible.</li>
+      <b>Dalai Lama</b>
+
+      <li>Happiness lies in the joy of achievement and the thrill of creative effort.</li>
+      <b>Franklin D. Roosevelt</b>
+
+      <li>Happiness is not something ready made. It comes from your own actions.</li>
+      <b>Dalai Lama</b>
+
+      <li>The most important thing is to enjoy your life—to be happy—it's all that matters.</li>
+      <b>Audrey Hepburn</b>
+
+      <li>Happiness depends upon ourselves.</li>
+      <b>Aristotle</b>
+
+      <li>The purpose of our lives is to be happy.</li>
+      <b>Dalai Lama</b>
+
+      <li>For every minute you are angry you lose sixty seconds of happiness.</li>
+      <b>Ralph Waldo Emerson</b>    
+    </ol>
+  </figure>
+</details>
+</article>
+
+  <article class="main-box" id="friendship">
+    <details>
+      <summary class="main-name" id="jump-7" >FRIENDSHIP</summary>
+      <figure class="main-data"> 
+  
+        <ol>
+  
+          <li>Friendship is unnecessary, like philosophy, like art...
+              It has no survival value; rather it is one of those things 
+              which give value to survival.</li>
+          <b>C.S. Lewis</b>
+
+          <li>A friend is someone who knows all about you and still loves you.</li>
+          <b>Elbert Hubbard</b>
+
+          <li>True friendship comes when the silence between two people is comfortable.</li>
+          <b>David Tyson</b>
+
+          <li>Friendship is the only cement that will ever hold the world together.</li>
+          <b>Woodrow Wilson</b>
+
+          <li>A real friend is one who walks in when the rest of the world walks out.</li>
+          <b>Walter Winchell</b>
+
+          <li>Friends are the siblings God never gave us.</li>
+          <b>Mencius</b>
+
+          <li>A single rose can be my garden… a single friend, my world.</li>
+          <b>Leo Buscaglia</b>
+
+          <li>Friendship is born at that moment when one person says to another, 
+            'What! You too? I thought I was the only one.</li>
+          <b>C.S. Lewis</b>
+
+          <li>A friend is one that knows you as you are, understands where you have been,
+              accepts what you have become, and still, gently allows you to grow.</li>
+          <b>William Shakespeare</b>
+
+          <li>The only way to have a friend is to be one.</li>
+          <b>Ralph Waldo Emerson</b>
+        </ol>
+      </figure>
+    </details>
+  </article>
+
+<article class="main-box" id="leadership">
+  <details>
+    <summary class="main-name" id="jump-8">LEADERSHIP</summary>
+    <figure class="main-data"> 
+        
+  <ol>
+
+    <li>If your actions inspire others to dream more, learn more,
+        do more and become more, you are a leader</li>
+    <b>John Quincy Adams</b>
+    
+
+    <li>Leadership is the capacity to translate vision into reality</li>
+    <b>Warren Bennis </b>
+    
+
+    <li>Perseverance is failing 19 times and succeeding the 20th.</li>
+    <b>Julie Andrews</b>
+
+    <li>Success is the sum of small efforts, repeated day in and day out.</li>
+    <b>Robert Collier</b>
+
+    <li>Through perseverance many people win success out of what seemed destined to be certain failure.</li>
+    <b>Benjamin Disraeli</b>
+
+    <li>Energy and persistence conquer all things.</li>
+    <b> Benjamin Franklin</b>
+
+    <li>Perseverance is the hard work you do after you get tired of doing the hard work you already did.</li>
+    <b>Newt Gingrich</b>
+
+    <li>A genuine leader is not a searcher for consensus but a molder of consensus.</li>
+    <b>Martin Luther King Jr.</b>
+
+    <li>The art of leadership is saying no, not yes. It is very easy to say yes.</li>
+    <b>Tony Blair</b>
+
+    <li>Leadership and learning are indispensable to each other.</li>
+    <b>John F. Kennedy</b>
+
+    <li>The function of leadership is to produce more leaders, not more followers.</li>
+    <b>Ralph Nader</b>
+
+          
+</ol>
+  </figure>
+</details>
+</article>
+
+<article class="main-box" id="learning">
+  <details>
+    <summary class="main-name" id="jump-9" >LEARNING / EDUCATION</summary>
+    <figure class="main-data"> 
+        
+  <ol>
+
+    <li>Live as if you were to die tomorrow. Learn as if you were to live forever.</li>
+    <b>Mahatma Gandhi</b>
+    
+
+    <li>The roots of education are bitter, but the fruit is sweet</li>
+    <b>Aristotle </b>
+    
+
+    <li>Education is the most powerful weapon which you can use to change the world.</li>
+    <b>Nelson Mandela</b>
+
+    <li>An investment in knowledge pays the best interest.</li>
+    <b>Benjamin Franklin</b>
+
+    <li>The only person who is educated is the one who has learned how to learn and change.</li>
+    <b>Carl Rogers</b>
+
+    <li>Develop a passion for learning. If you do, you will never cease to grow.</li>
+    <b>Anthony J. D’Angelo</b>
+
+    <li>Education is not the filling of a pail, but the lighting of a fire.</li>
+    <b>William Butler Yeats</b>
+
+    <li>Learning never exhausts the mind.</li>
+    <b>Leonardo da Vinci</b>
+
+    <li>The beautiful thing about learning is that no one can take it away from you.</li>
+    <b>B.B. King</b>
+
+    <li>Education is what remains after one has forgotten what one has learned in school.</li>
+    <b>Albert Einstein</b>
+
+          
+</ol>
+  </figure>
+</details>
+</article>
+
+<article class="main-box" id="time">
+  <details>
+    <summary class="main-name" id="jump-10" >TIME</summary>
+    <figure class="main-data"> 
+        
+  <ol>
+
+    <li>Time is what we want most, but what we use worst.</li>
+    <b>William Penn</b>
+
+    <li>Lost time is never found again.</li>
+    <b>Benjamin Franklin</b>
+
+    <li>Time flies over us, but leaves its shadow behind.</li>
+    <b>Nathaniel Hawthorne</b>
+
+    <li>The two most powerful warriors are patience and time.</li>
+    <b>Leo Tolstoy</b>
+
+    <li>Time is the most valuable thing a man can spend.</li>
+    <b>Theophrastus</b>
+
+    <li>Time you enjoy wasting is not wasted time.</li>
+    <b>Marthe Troly-Curtin</b>
+
+    <li>Time stays long enough for those who use it.</li>
+    <b>Leonardo da Vinci</b>
+
+    <li>The future is something which everyone reaches at the rate of sixty minutes an hour.</li>
+    <b>C.S. Lewis</b>
+
+    <li>Time is more valuable than money. You can get more money, but you cannot get more time.</li>
+    <b>Jim Rohn</b>
+
+    <li>Better three hours too soon than a minute too late.</li>
+    <b>William Shakespeare</b>
+  
+          
+</ol>
+  </figure>
+</details>
+</article>
+
+<article class="main-box" id="trust">
+  <details>
+    <summary class="main-name" id="jump-11" >TRUST</summary>
+    <figure class="main-data"> 
+        
+  <ol>
+
+    <li>Trust takes years to build, seconds to break, and forever to repair.</li>
+    <b>Unknown</b>
+
+    <li>The best way to find out if you can trust somebody is to trust them.</li>
+    <b>Ernest Hemingway</b>
+
+    <li>Whoever is careless with the truth in small matters cannot be trusted with important matters.</li>
+    <b>Albert Einstein</b>
+
+    <li>Trust yourself. You know more than you think you do. </li>
+    <b>Benjamin Spock</b>
+
+    <li>Trust is the glue of life. </li>
+    <b>Stephen R. Covey</b>
+
+    <li>It is an equal failing to trust everybody, and to trust nobody. </li>
+    <b>English Proverb</b>
+
+    <li>To be trusted is a greater compliment than to be loved. </li>
+    <b>George MacDonald</b>
+
+    <li>Learning to trust is one of life's most difficult tasks. </li>
+    <b>Isaac Watts</b>
+
+    <li>Trust starts with truth and ends with truth. </li>
+    <b>Santosh Kalwar</b>
+
+    <li>Love all, trust a few, do wrong to none.</li>
+    <b>William Shakespeare</b>
+          
+</ol>
+  </figure>
+</details>
+</article>
+
+
+
+
+
+
+
+
+  
+</section>
+</body>
+</html>
+  
+  
+  
+  
+  
+  
+  
